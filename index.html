@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour & Travel</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="container">
+    <header class="header">
+        <div class="header__logo">
+            <img src="./img/logo.png" alt="logo" class="logo">
+        </div>
+        <div class="header__ham">
+            <img src="./img/Menu.png" alt="hambergur-icon" class="ham">
+        </div>
+        <nav class="nav__items">
+            <ul class="nav__links">
+                <li class="nav__link nav__link--active"><a href="#">Home</a></li>
+                <li class="nav__link"><a href="#">Destination</a></li>
+                <li class="nav__link"><a href="#">About</a></li>
+                <li class="nav__link"><a href="#">Partner</a></li>
+                <li class="nav__link nav__link--btn"><button class="btn btn--tran">Login</button></li>
+                <li class="nav__link nav__link--btn"><button class="btn">Register</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero__content">
+        <h1 class="hero__heading mb_lr anim1">Explore and <span class="hero__heading--block">Travel</span></h1>
+        <div class="hero__holiday-finder">
+            <h3 class="heading--3 hero__heading2 mb_sm anim1">Holiday finder</h3>
+            <select name="Location" id="Location" class="hero__select anim1">
+                <option value="Location">Location</option>
+            </select>
+            <select name="Activity" id="Activity" class="hero__select anim1">
+                <option value="Activity">Activity</option>
+            </select>
+            <select name="Grade" id="Grade" class="hero__select anim1">
+                <option value="Grade">Grade</option>
+            </select>
+            <select name="Date" id="Date" class="hero__select anim1">
+                <option value="Date">Date</option>
+            </select>
+            <button class="btn hero__btn anim1">Explore</button>
+        </div>
+    </div>
+    <div class="hero__img anim2">
+        <img src="./img/illu1.png" alt="hero-img" class="illu1">
+    </div>
+    <div class="explore__img" data-aos="zoom-out-down">
+        <img src="./img/illu2.png" alt="explore-img" class="illu2">
+    </div>
+    <div class="explore__content" data-aos="slide-left" >
+        <h2 class="heading--2 mb_sm">A new way to explore the world </h2>
+        <p class="text mb_md">For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+        <button class="btn explore__btn">Learn More</button>
+    </div>
+    <section class="features">
+        <div class="features__heading">
+            <h2 class="heading--2 mb_hg">Featured destinations</h2>
+            <p class="text features__view">View all ></p>
+        </div>
+        <div class="destinations">
+            <div class="destination" data-aos="fade-right">
+                <img src="./img/fea_img_1.png" alt="img" class="f" >
+                <div class="destination__desname">Raja Ampat<span class="destination__desplace">Indonesia</span></div>
+            </div>
+            <div class="destination" data-aos="fade-right" data-aos-delay="100">
+                <img src="./img/fea_img_2.png" alt="img" class="f" >
+                <div class="destination__desname">Fanjingshan<span class="destination__desplace">China</span></div>
+            </div>
+            <div class="destination" data-aos="fade-right" data-aos-delay="200">
+                <img src="./img/fea_img_3.png" alt="img" class="f" >
+                <div class="destination__desname">Vevey<span class="destination__desplace">Switzerland</span></div>
+            </div>
+            <div class="destination" data-aos="fade-right" data-aos-delay="300">
+                <img src="./img/fea_img_4.png" alt="img" class="f">
+                <div class="destination__desname">Skadar<span class="destination__desplace">Montenegro</span></div>
+            </div>
+        </div>
+    </section>
+    <div class="guide__content" data-aos="slide-right">
+        <h2 class="heading--2 heading--21 mb_sm">Guides by Thousand Sunny </h2>
+        <p class="text mb_md">Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.</p>
+        <button class="btn explore__btn">Download</button>
+    </div>
+    <div class="guide__img" data-aos="zoom-out-down">
+        <img src="./img/illu3.png" alt="guide-img" class="illu3">
+    </div>
+    <div class="testimonials__content" >
+        <h2 class="heading--2 mb_hg--2 testimonials__heading">Testimonials</h2>
+        <img src="./img/stars.png" alt="stars" class="testimonials__stars mb_sm" data-aos="zoom-out" data-aos-delay="400" data-aos-offset="150">
+        <p class="testimonials__blockquotes mb_md" data-aos="slide-right" data-aos-offset="15">“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”</p>
+        <p class="testimonials__name" data-aos="slide-right" data-aos-delay="100" data-aos-offset="100">Edward Newgate <span class="testimonials__name--desc">Founder Circle</span></p>
+    </div>
+    <div class="testimonials__img" data-aos="zoom-out-down">
+        <img src="./img/testimonial.png" alt="testimonial-img" class="testimonial-img">
+    </div>
+    <section class="story">
+        <div class="story__heading">
+            <h2 class="heading--2 mb_hg">Trending stories</h2>
+            <p class="text features__view">View all ></p>
+        </div>
+        <div class="stories">
+            <div class="stori" data-aos="fade-left" data-aos-delay="300">
+                <img src="./img/sr_1.png" alt="img" class="s">
+                <h3 class="stori__heading heading--3 mb_sm">The many benefits of taking a healing holiday</h3>
+                <p class="text stori__text mb_sm">‘Helaing holidays’ are on the rise tohelp maximise your health and happines...</p>
+                <p class="text stori__more">Read more</p>
+            </div>
+            <div class="stori" data-aos="fade-left" data-aos-delay="200">
+                <img src="./img/sr_2.png" alt="img" class="s">
+                <h3 class="stori__heading heading--3 mb_sm">The best Kyoto restaurant to try Japanese food</h3>
+                <p class="text stori__text mb_sm">From tofu to teahouses, here’s our guide to Kyoto’s best restaurants to visit...</p>
+                <p class="text stori__more">Read more</p>
+            </div>
+            <div class="stori" data-aos="fade-left" data-aos-delay="100">
+                <img src="./img/sr_3.png" alt="img" class="s">
+                <h3 class="stori__heading heading--3 mb_sm">Skip Chichen Itza and head to this remote</h3>
+                <p class="text stori__text mb_sm">It’s remote and challenging to get, but braving the jungle and exploring these ruins without the...</p>
+                <p class="text stori__more">Read more</p>
+            </div>
+            <div class="stori" data-aos="fade-left">
+                <img src="./img/sr_4.png" alt="img" class="s">
+                <h3 class="stori__heading heading--3 mb_sm">Surf’s up at these beginner spots around</h3>
+                <p class="text stori__text mb_sm">If learning to surf has in on your to-do list for a while, the good news is: it’s never too late...</p>
+                <p class="text stori__more">Read more</p>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <footer class="footer__main">
+            <ul class="footer__contents">
+                <li class="footer__content mb_sm"><img src="./img/logo.png" alt="footer-logo" class="footer__logo"></li>
+                <li class="footer__content mb_sm"><p class="footer__content--modifier">Plan and book your perfect trip with 
+                    expert advice, travel tips destination
+                    information from us</p></li>
+                <li class="footer__content">©2020 Thousand Sunny. All rights reserved</li>
+            </ul>
+            <ul class="footer__destinations end">
+                <li class="footer__destination dark mb_sm">Destinations</li>
+                <li class="footer__destination">Africa</li>
+                <li class="footer__destination">Antarctica</li>
+                <li class="footer__destination">Asia</li>
+                <li class="footer__destination">Europe</li>
+                <li class="footer__destination">America</li>
+            </ul>
+            <ul class="footer__shops end">
+                <li class="footer__shop dark mb_sm">Shop</li>
+                <li class="footer__shop">Destination Guides</li>
+                <li class="footer__shop">Pictorial & Gifts</li>
+                <li class="footer__shop">Special Offers</li>
+                <li class="footer__shop">Delivery Times</li>
+                <li class="footer__shop">FAQs</li>
+            </ul>
+            <ul class="footer__Interests end">
+                <li class="footer__Interest dark mb_sm">Interests</li>
+                <li class="footer__Interest">Adventure Trave</li>
+                <li class="footer__Interest">Art And Culture</li>
+                <li class="footer__Interest">Wildlife And Nature</li>
+                <li class="footer__Interest">Family Holidays</li>
+                <li class="footer__Interest">Food And Drink</li>
+            </ul>
+        </footer>
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+
+    <script>
+
+        gsap.from('.anim1', { opacity: 0, duration: 1, y: -50, ease: 'Power2.easeInOut', stagger: 0.6, })
+        gsap.from('.anim2', { opacity: 0, duration: 1, x: 100, ease: 'Power2.easeInOut', delay: 3.6 })
+
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 350
+        });
+    </script>
+
+</body>
+</html>

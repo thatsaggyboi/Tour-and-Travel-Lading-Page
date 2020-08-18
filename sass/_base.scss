@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @include largest {
+        font-size: 55%;
+    }
+}
+
+body {
+    font-family: "montserrat",sans-serif;
+    color: color(primary);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: color(primary);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: min-content 87vh 40vw min-content repeat(2,40vw) repeat(2, min-content);
+    grid-template-columns: [full-start] minmax(6rem,1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem,1fr) [full-end];
+
+    @include large {
+        grid-template-rows: min-content 87vh 40vw min-content 40vw 50vw repeat(2, min-content);
+    }
+
+    @include medium {
+        grid-template-rows: min-content 87vh 50vw min-content 50vw 65vw repeat(2, min-content);
+    }
+
+    @include small {
+        grid-template-rows: repeat(3, min-content) min-content min-content min-content min-content min-content min-content repeat(2, min-content);
+    }
+
+    @include smallest {
+        grid-template-columns: [full-start] 1.5rem [center-start] repeat(8, [col-start] minmax(1rem, 14rem) [col-end]) [center-end] 1.5rem [full-end];
+    }
+    
+}

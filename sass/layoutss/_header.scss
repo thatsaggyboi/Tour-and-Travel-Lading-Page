@@ -1,0 +1,66 @@
+.header {
+    grid-column: center-start / center-end;
+    padding: 2.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        width: 4.1rem;
+
+        .logo {
+            width: 100%;
+        }
+    }
+
+    &__ham {
+        display: none;
+
+        @include medium {
+        display: block;
+        width: 3.2rem;
+
+            .ham {
+                width: 100%;
+            }
+        }
+    }
+
+    .nav {
+        &__links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__link {
+            margin-left: 3rem;
+            font-size: 1.4rem;
+            opacity: 50%;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &--active,
+            &--btn {
+                opacity: 1;
+                font-weight: bold;
+            }
+
+            .btn {
+                &--tran {
+                    color: color(secondary);
+                    background: none;
+                    border: 2px solid color(secondary);
+                }
+            }
+        }
+
+        &__items {
+            @include medium {
+                display: none;
+            }
+        }
+    }
+}

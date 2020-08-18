@@ -1,0 +1,57 @@
+.testimonials {
+    &__content {
+        grid-column: center-start / col-end 4;
+        padding: 3rem 0;
+
+        @include small {
+            grid-column: center-start / center-end;
+            text-align: center;
+        }
+    }
+
+    &__heading {
+        @include small {
+            margin-bottom: 7rem;
+        }
+    }
+
+    &__blockquotes {
+        font-size: 2rem;
+        width: 90%;
+
+        @include small {
+            margin: 0 auto 3rem;
+        }
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: 1.8rem;
+
+        &--desc {
+            font-weight: normal;
+            font-size: 1.6rem;
+            display: block;
+        }
+    }
+
+    &__img {
+        grid-column: col-start 5 / center-end;
+        align-self: center;
+        display: grid;
+        justify-items: center;
+
+        .testimonial-img {
+            width: 70%;
+
+            @include smallest-v2 {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+
+        @include small {
+           display: none;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.heading {
+    font-weight: 400;
+}
+
+.heading--2 {
+    @extend .heading;
+    font-size: 3.4rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+
+.heading--3 {
+    @extend .heading;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.btn {
+    background-color: color(secondary);
+    outline: none;
+    border-color: transparent;
+    border-radius: .8rem;
+    font-size: 1.3rem;
+    color: color(white);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1.5rem 3.5rem;
+}
+
+.text {
+    font-size: 1.6rem;
+    line-height: 1.9;
+    opacity: .6;
+}
+
+.mb_sm {
+    margin-bottom: 2rem;
+}
+.mb_md {
+    margin-bottom: 3rem;
+}
+.mb_lr {
+    margin-bottom: 4rem;
+}
+.mb_hg {
+    margin-bottom: 5rem;
+}
+.mb_hg--2 {
+    margin-bottom: 14rem;
+}

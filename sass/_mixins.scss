@@ -1,0 +1,42 @@
+@mixin largest {
+    @media (max-width: #{$bp-largest}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (max-width: #{$bp-large}) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (max-width: #{$bp-medium}) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media (max-width: #{$bp-small}) {
+        @content;
+    }
+}
+
+@mixin smallest {
+    @media (max-width: #{$bp-smallest}) {
+        @content;
+    }
+}
+
+@mixin smallest-v2 {
+    @media (max-width: #{$bp-smallest-v2}) {
+        @content;
+    }
+}
+
+@mixin smallest-v3 {
+    @media (max-width: #{$bp-smallest-v3}) {
+        @content;
+    }
+}
+

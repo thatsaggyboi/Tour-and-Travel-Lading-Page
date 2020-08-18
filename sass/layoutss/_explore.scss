@@ -1,0 +1,52 @@
+.explore {
+
+    &__img {
+        grid-column: center-start / col-end 4;
+        align-self: center;
+        display: grid;
+        justify-items: start;
+
+        .illu2 {
+            width: 80%;
+
+            @include small {
+                width: 25rem;
+             }
+
+            @include smallest-v2 {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+
+        @include small {
+            justify-self: center;
+        }
+
+        @include small {
+            grid-column: center-start / center-end;
+            grid-row: 4 / 5;
+            padding-top: 4rem;
+        }
+    }
+
+    &__content {
+        grid-column: col-start 5 / center-end;
+        align-self: center;
+
+        @include small {
+            grid-column: center-start / center-end;
+            padding: 4rem;
+            text-align: center;
+        }
+    }
+
+    &__btn {
+        padding: 1.5rem 4rem;
+
+        @include small {
+            width: 100%;
+        }
+    }
+    
+}

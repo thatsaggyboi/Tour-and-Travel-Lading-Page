@@ -1,0 +1,79 @@
+
+li {
+    font-size: 1.3rem;
+    opacity: .6;
+    margin-bottom: .6rem;
+} 
+
+.footer {
+    grid-column: full-start / full-end;
+    background-color: color(light-grey);
+
+    &__main {
+        background-color: color(light-grey);
+        grid-column: center-start / center-end;
+        width: 85%;
+        padding: 5rem 0;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+        //align-items: center;
+
+        @include small {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+    }
+
+    &__logo {
+        width: 4.1rem;
+    }
+
+    &__content {
+        font-size: 1.3rem;
+        opacity: .6;
+        &--modifier {
+            width: 90%;
+
+            @include small {
+                width: 100%;
+            }
+        }
+    }
+
+    &__destinations {
+        @include small {
+            display: none;
+        }
+    }
+
+    &__shops {
+        @include small {
+            display: none;
+        }
+    }
+
+    &__Interests {
+        @include small {
+            display: none;
+        }
+    }
+
+
+}
+
+.dark {
+    font-weight: bold;
+    font-size: 1.3rem;
+    opacity: 1;
+}
+
+.end {
+    justify-self: end;
+}
+
+

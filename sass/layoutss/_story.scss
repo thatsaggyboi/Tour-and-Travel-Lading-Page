@@ -1,0 +1,99 @@
+.story {
+    grid-column: center-start / center-end;
+    padding: 4rem 0;
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+
+        @include small {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__view {
+        opacity: 1;
+        color: color(secondary);
+        cursor: pointer;
+    }
+}
+
+.heading--2 {
+    @include smallest {
+        text-align: center ;
+    }
+} 
+
+.stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+   
+    grid-gap: 3rem;
+
+    @include large {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    @include medium {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+
+    @include smallest {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        margin: 0 11rem;
+    }
+
+    @include smallest-v2 {
+        margin: 0 8rem;
+    }
+
+    @include smallest-v3 {
+        margin: 0;
+    }
+
+    .stori {
+
+        @include smallest {
+            text-align: center;
+        }
+
+
+        .s {
+            width: 100%;
+            height: 21.9rem;
+            border-top-left-radius: .8rem;
+            border-top-right-radius: .8rem;
+            margin-bottom: .9rem;
+
+            @include medium {
+                height: 30rem;
+            }
+
+            @include smallest {
+                height: 30rem;
+            }
+
+            @include smallest-v2 {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        &__heading {
+            font-size: 1.7rem;
+        }
+
+        &__text {
+            font-size: 1.4rem;
+        }
+
+        &__more {
+            opacity: 1;
+            color: color(secondary);
+        }
+
+
+    }
+}
+
