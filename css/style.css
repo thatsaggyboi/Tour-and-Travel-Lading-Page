@@ -192,6 +192,7 @@ ul {
   opacity: .6;
   border: 1px solid rgba(32, 35, 54, 0.4);
   padding: 1rem 2rem;
+  outline: none
   -moz-appearance: none;
   /* Firefox */
   -webkit-appearance: none;
